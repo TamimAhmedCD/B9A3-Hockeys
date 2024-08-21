@@ -12,8 +12,8 @@
           theme: {
             extend: {
               colors: {
-                primary: 'rgb(231, 111, 81)',
-                bg: 'rgba(231, 111, 81, 0.1)'
+                primary: 'rgb(255, 66, 64)',
+                secondary: 'rgb(19, 19, 24)'
               }
             }
           }
@@ -37,64 +37,81 @@
 <body class="container mx-auto">
 
     <!-- Header Section -->
-    <header>
+    <header class="container mx-auto">
 
-        <!-- Navbar -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start flex-1">
+      <!-- Navbar -->
+      <nav>
 
-            <!-- Dropdown -->
+        <!-- Container -->
+        <div class="mt-12 flex justify-between items-center p-5">
+
+          <div>
+
+            <!-- Drop Down -->
             <div class="dropdown">
-                <div tabindex="0" role="button" class=" mr-3 lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>News</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-            </div>
-
-                <!-- Logo -->
-                <a class="font-black text-xl text-black cursor-pointer">Bike Dekho</a>
-            </div>
-
-            <div>
-
-            <!-- Items -->
-
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
+              <div tabindex="0" role="button" class="lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Pages</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
               </ul>
             </div>
 
-            <!-- Button -->
-            <div class="navbar-end justify-start">
-              <a class="btn w-28 font-bold bg-primary text-white">Login</a>
-            </div>
+            <!-- Logo -->
+            <a href="#" class="font-bold text-2xl lg:text-4xl text-secondary ml-3">Hockey<span class="text-primary">'</span>s</a>
+          </div>
 
-            </div>
+          <!-- Nav List -->
+          <div class="hidden lg:flex items-center gap-11">
+            <a href="#" class="text-primary">Home</a>
+            <a href="#" class="hover:text-primary">About</a>
+            <a href="#" class="hover:text-primary">Pages</a>
+            <a href="#" class="hover:text-primary">Blog</a>
+            <a href="#" class="hover:text-primary">Contact</a>
+          </div>
 
+          <!-- Nav Button -->
+          <div class="flex items-center gap-5">
+
+            <!-- Search btn -->
+            <button class="hidden lg:flex items-center btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+
+            <!-- Ticket btn -->
+            <button class="btn btn-primary bg-primary border-none text-white hover:bg-gray-400">Get Ticket</button>
+          </div>
         </div>
         
+      </nav>
     </header>
 
     <!-- Main Section -->
